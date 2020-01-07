@@ -1,0 +1,9 @@
+body {
+  padding: 67px 0 67px 0;
+  min-height: 100vh;
+  height: 100%;
+  position: relative;
+  /*background: #ededed!important;*/
+  background: url("./images/home.jpg") no-repeat center center;
+  background-size: cover;
+}
