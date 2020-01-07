@@ -1,0 +1,41 @@
+package com.kuzin.newsapp.model;
+
+import org.springframework.security.core.GrantedAuthority;
+
+public enum Permission implements GrantedAuthority {
+
+	// AVATAR_MANAGEMENT
+	ROLE_AVATAR_EDIT,
+	ROLE_AVATAR_DELETE,
+
+	// COMMENT_MANAGEMENT
+	ROLE_COMMENT_EDIT,
+	ROLE_COMMENT_DELETE,
+
+	// IMAGE_MANAGEMENT
+	ROLE_IMAGE_EDIT,
+	ROLE_IMAGE_DELETE,
+
+	// POST_MANAGEMENT
+	ROLE_POST_EDIT,
+	ROLE_POST_DELETE,
+
+	// ROLE_MANAGEMENT
+	ROLE_ROLE_READ,
+	ROLE_ROLE_EDIT,
+	ROLE_ROLE_DELETE,
+
+	// USER_MANAGEMENT
+	ROLE_USER_ROLE_EDIT,
+	ROLE_USER_PROFILE_READ,
+	ROLE_USER_PROFILE_EDIT,
+
+	// VIDEO_MANAGEMENT
+	ROLE_VIDEO_EDIT,
+	ROLE_VIDEO_DELETE;
+
+	@Override
+	public String getAuthority() {
+		return name();
+	}
+}
